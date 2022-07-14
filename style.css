@@ -7,7 +7,10 @@
 body {
   max-height: 100vh;
   background-image: url(/img/supernova\ bg.png);
-  background-size: cover;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  background-color: #e2dfd8;
 }
 nav ul {
   display: flex;
@@ -21,7 +24,7 @@ li {
 }
 
 .hero-container {
-  margin: 3rem 2rem 3rem 2rem;
+  margin: 6rem 2rem 3rem 2rem;
 }
 
 .hero-container h1 {
@@ -38,4 +41,27 @@ li {
 .hero-left {
   max-width: 60vw;
   padding: 6rem 0rem 5rem 5rem;
+}
+
+.horoscope-container {
+  margin: 6rem 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.starsign-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3rem 3rem;
+  margin-top: 5rem;
+}
+
+.starsign {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
