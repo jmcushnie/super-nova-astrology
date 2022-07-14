@@ -42,3 +42,28 @@ li {
   max-width: 60vw;
   padding: 6rem 0rem 5rem 5rem;
 }
+
+.horoscope-container {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horoscope-container h2 {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+select {
+  border: 1.5px solid;
+  border-radius: 20px;
+  padding: 0.5rem;
+  background-color: transparent;
+  margin: 1rem;
+  max-width: 20vw;
+  font-size: 1.5rem;
+}
+
+.select-container {
+  margin: 3rem 0 6rem 0;
+}
