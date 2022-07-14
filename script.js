@@ -1,8 +1,3 @@
-let userDayInput = document.getElementById("select-day");
-let myDay = userDayInput.value;
-let userSignInput = document.getElementById("starsign");
-let mySign = userSignInput.value;
-
 // API
 const options = {
   method: "POST",
@@ -12,10 +7,21 @@ const options = {
   },
 };
 
-fetch(
-  `https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${mySign}&day=${myDay}`,
-  options
-)
-  .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch((err) => console.error(err));
+// Update Selection
+function Update() {
+  let userSignInput = document.getElementById("starsign");
+  let mySign = userSignInput.options[userSignInput.selectedIndex].value;
+  let userDayInput = document.getElementById("select-day");
+  let myDay = userDayInput.options[userDayInput.selectedIndex].value;
+  console.log(mySign);
+  console.log(myDay);
+  //document.getElementById("value").value = option.value;
+  fetch(
+    `https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${mySign}&day=${myDay}`,
+    options
+  )
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch((err) => console.error(err));
+}
+Update();
