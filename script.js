@@ -1,3 +1,8 @@
+let userDayInput = document.getElementById("select-day");
+let myDay = userDayInput.value;
+let userSignInput = document.getElementById("starsign");
+let mySign = userSignInput.value;
+
 // API
 const options = {
   method: "POST",
@@ -8,7 +13,7 @@ const options = {
 };
 
 fetch(
-  "https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${sign}&day=${today}",
+  `https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${mySign}&day=${myDay}`,
   options
 )
   .then((response) => response.json())

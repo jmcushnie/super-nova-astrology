@@ -25,23 +25,49 @@
             </div>
         </header>
 
-        <section class="horoscope-container">
+       
+        <select name="starsign" id="starsign">
+            <option value="Aries">Aries</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="pisces">pisces</option>
+            <br>
+            <input type="submit" value="Submit">
+        </select>
+
+        <select name="day" id="select-day">
+            <option value="Today">Today</option>
+            <option value="Yesterday">Yesterday</option>
+            <option value="Tomorrow">Tomorrow</option>
+        </select>
+
+
+     <section class="horoscope-container">
             <h2>Select your starsign</h2>
             <div class="starsign-container">
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_aries.png" alt=""> Aries <br>(March 21 – April 19)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_gemini.png" alt=""> Gemini <br>(May 21 – June 20)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_cancer.png" alt=""> Cancer <br>(June 21 – July 22)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_taurus.png" alt=""> Taurus <br>(April 20 – May 20)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_leo.png" alt=""> Leo <br>(July 23 – August 22)</div>
-            <div class="starsign"> <img style = "width: 100px; height:100px" src="/img/starsign_virgo.png" alt="">Virgo <br>(August 23 – September 22)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_libra.png" alt=""> Libra <br>(September 23 – October 22)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_scorpio.png" alt=""> Scorpio <br>(October 23 – November 21)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_sagi.png" alt=""> Sagittarius<br> (November 22 – December 21)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_capricorn.png" alt=""> Capricorn <br>(December 22 – January 19)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_aquarius.png" alt=""> Aquarius<br> (January 20 – February 18)</div>
-            <div class="starsign"><img style = "width: 100px; height:100px" src="/img/starsign_pisces.png" alt=""> Pisces <br>(February 19 – March 20)</div>
+            <div class="starsign" id="aries"><img style = "width: 100px; height:100px" src="/img/starsign_aries.png" alt=""> Aries <br>(March 21 – April 19)</div>
+            <div class="starsign" id="gemini"><img style = "width: 100px; height:100px" src="/img/starsign_gemini.png" alt=""> Gemini <br>(May 21 – June 20)</div>
+            <div class="starsign" id="cancer"><img style = "width: 100px; height:100px" src="/img/starsign_cancer.png" alt=""> Cancer <br>(June 21 – July 22)</div>
+            <div class="starsign" id="taurus"><img style = "width: 100px; height:100px" src="/img/starsign_taurus.png" alt=""> Taurus <br>(April 20 – May 20)</div>
+            <div class="starsign" id="leo"><img style = "width: 100px; height:100px" src="/img/starsign_leo.png" alt=""> Leo <br>(July 23 – August 22)</div>
+            <div class="starsign" id="virgo"> <img style = "width: 100px; height:100px" src="/img/starsign_virgo.png" alt="">Virgo <br>(August 23 – September 22)</div>
+            <div class="starsign" id="libra"><img style = "width: 100px; height:100px" src="/img/starsign_libra.png" alt=""> Libra <br>(September 23 – October 22)</div>
+            <div class="starsign" id="scorpio"><img style = "width: 100px; height:100px" src="/img/starsign_scorpio.png" alt=""> Scorpio <br>(October 23 – November 21)</div>
+            <div class="starsign" id="saggi"><img style = "width: 100px; height:100px" src="/img/starsign_sagi.png" alt=""> Sagittarius<br> (November 22 – December 21)</div>
+            <div class="starsign" id="capricorn"><img style = "width: 100px; height:100px" src="/img/starsign_capricorn.png" alt=""> Capricorn <br>(December 22 – January 19)</div>
+            <div class="starsign" id="aquarius"><img style = "width: 100px; height:100px" src="/img/starsign_aquarius.png" alt=""> Aquarius<br> (January 20 – February 18)</div>
+            <div class="starsign" id="pisces"><img style = "width: 100px; height:100px" src="/img/starsign_pisces.png" alt=""> Pisces <br>(February 19 – March 20)</div>
         </div>
         </section>
+    
     
  <script src="script.js"></script>   
 </body>
