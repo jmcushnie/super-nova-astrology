@@ -77,3 +77,8 @@ select {
   margin-top: 1rem;
   margin-bottom: 6rem;
 }
+
+#date {
+  padding: 0 0 1rem 0;
+  font-style: italic;
+}

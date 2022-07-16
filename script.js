@@ -1,4 +1,6 @@
-const horoscope = document.getElementById("my-horoscope");
+const horoscope = document.getElementById("description");
+const date = document.getElementById("date");
+
 // API
 const options = {
   method: "POST",
@@ -25,7 +27,9 @@ function Update() {
     .then((data) => {
       console.log(data);
       const description = data.description;
+      const currentDate = data.current_date;
       horoscope.innerText = description;
+      date.innerText = currentDate;
     })
     .catch((err) => console.error(err));
 }
