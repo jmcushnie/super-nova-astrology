@@ -1,3 +1,4 @@
+const horoscope = document.getElementById("my-horoscope");
 // API
 const options = {
   method: "POST",
@@ -15,14 +16,17 @@ function Update() {
   let myDay = userDayInput.options[userDayInput.selectedIndex].value;
   console.log(mySign);
   console.log(myDay);
-  //document.getElementById("value").value = option.value;
+
   fetch(
     `https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${mySign}&day=${myDay}`,
     options
   )
     .then((response) => response.json())
-    .then((response) => console.log(response))
+    .then((data) => {
+      console.log(data);
+      const description = data.description;
+      horoscope.innerText = description;
+    })
     .catch((err) => console.error(err));
-  console.log(response.description);
 }
 Update();

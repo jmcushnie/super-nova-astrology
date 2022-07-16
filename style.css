@@ -65,5 +65,15 @@ select {
 }
 
 .select-container {
-  margin: 3rem 0 6rem 0;
+  margin: 3rem 0 0 0;
+}
+
+#my-horoscope {
+  background-color: rgb(223, 187, 110);
+  border-radius: 20px;
+  width: 70vw;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
 }
