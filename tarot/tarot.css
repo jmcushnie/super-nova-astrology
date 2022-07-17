@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(198, 212, 192);
+  background-color: #e2dfd8;
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
@@ -30,12 +30,13 @@ h1 {
   background-color: rgb(255, 255, 255);
   height: 70vh;
   padding-bottom: 2rem;
+  border-radius: 20px;
 }
 
 button {
   background-color: rgb(255, 255, 255);
   border-style: none;
-  border-radius: 2px;
+  border-radius: 20px;
   padding: 1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
