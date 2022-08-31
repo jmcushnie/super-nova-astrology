@@ -16,6 +16,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  width: 95vw;
 }
 
 a {
@@ -89,4 +90,24 @@ select {
 #date {
   padding: 0 0 1rem 0;
   font-style: italic;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+ .hero-container h1{
+  font-size: 3rem;
+ }
+
+ select {
+  border: 1.5px solid;
+  border-radius: 20px;
+  padding: 0.5rem;
+  background-color: transparent;
+  margin: 1rem;
+  max-width: 50vw;
+  font-size: 1.5rem;
+}
+
 }
